@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.thegameoflife.MainActivity"
+    android:background="@color/black">
+
+    <com.example.thegameoflife.GameOfLifeView
+        android:id="@+id/game_of_life"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/playButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="15dp"
+            app:srcCompat="@drawable/ic_play"
+            android:background="@drawable/button_background"
+            android:clickable="true"/>
+
+
+        <ImageButton
+            android:id="@+id/refreshButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/ic_refresh"
+            android:background="@drawable/button_background"/>
+    </LinearLayout>
+
+</LinearLayout>
